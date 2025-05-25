@@ -19,11 +19,15 @@ function MoviesPage() {
         async function fetchMovies() {
             try {
                 setLoading(true);
+                setError(null);
                 const data = await searchMovies(query);
+                if (data.length === 0) {
+                    setError('No movies were found that match your search criteria.');
+                }
                 setMovies(data);
             } catch (err) {
                 console.error(err);
-                setError('Film arama sırasında bir hata oluştu.');
+                setError('An error occurred while searching for movies.');
                 setMovies([]);
             } finally {
                 setLoading(false);
