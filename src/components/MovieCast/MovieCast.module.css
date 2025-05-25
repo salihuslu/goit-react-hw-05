@@ -1,0 +1,41 @@
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.item {
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 8px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.info {
+  margin-top: 8px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.character {
+  font-size: 14px;
+  color: #555;
+}
+
+.message {
+  padding: 1rem;
+  font-size: 1.1rem;
+}

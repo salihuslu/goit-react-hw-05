@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid rgb(192, 189, 189);
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover,
+.button:focus {
+  outline: none;
+  border-color: rgb(192, 189, 189); /* aynı kalmasını istiyorsan mevcut border'ı tekrar tanımla */
+  box-shadow: none;
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgb(0, 170, 255); /* odaklanınca başka renge geçmesini istiyorsan */
+  box-shadow: none;
+}

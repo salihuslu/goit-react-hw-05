@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+  }
+  
+  .link {
+    margin-top: 20px;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
